@@ -1,0 +1,24 @@
+{
+  "name": "fabrica",
+  "version": "0.1.0",
+  "description": "factoryhelper methods",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/acatl/fabrica.git"
+  },
+  "keywords": [
+    "factory",
+    "pattern",
+    "defaults"
+  ],
+  "author": "acatl.pacheco@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/acatl/fabrica/issues"
+  },
+  "homepage": "https://github.com/acatl/fabrica"
+}
