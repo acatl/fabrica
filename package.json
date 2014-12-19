@@ -1,5 +1,5 @@
 {
-  "name": "fabrica",
+  "name": "v",
   "version": "0.1.0",
   "description": "factoryhelper methods",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/acatl/fabrica.git"
+    "url": "https://github.com/acatl/v.git"
   },
   "keywords": [
     "factory",
@@ -18,7 +18,16 @@
   "author": "acatl.pacheco@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/acatl/fabrica/issues"
+    "url": "https://github.com/acatl/v/issues"
   },
-  "homepage": "https://github.com/acatl/fabrica"
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-mocha-cli": "^1.10.0",
+    "mocha": "^1.21.5",
+    "should": "^4.4.1",
+    "time-grunt": "^1.0.0"
+  },
+  "homepage": "https://github.com/acatl/v"
 }
