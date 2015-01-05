@@ -5,13 +5,13 @@ function getValue(src, def) {
 }
 exports.getValue = getValue;
 
-function getValueByKey(key, src, def) {
+function getKey(key, src, def) {
   return getValue(src[key], def[key]);
 }
-exports.getValueByKey = getValueByKey;
+exports.getKey = getKey;
 
-function setKey(key, src, def) {
-  var val = src[key] = getValue(src[key], def[key]);
+function setKey(key, target, src, def) {
+  var val = target[key] = getValue(src[key], def[key]);
   return val;
 }
 exports.setKey = setKey;

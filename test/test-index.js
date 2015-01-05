@@ -13,12 +13,12 @@ describe('all', function() {
     });
   });
 
-  describe('#getValueByKey', function() {
+  describe('#getKey', function() {
     before(function() {
       var src = fixtures.getFixtureSource();
       var def = fixtures.getFixtureDefault();
-      this.val1 = fabrica.getValueByKey('a', src, def);
-      this.val2 = fabrica.getValueByKey('b', src, def);
+      this.val1 = fabrica.getKey('a', src, def);
+      this.val2 = fabrica.getKey('b', src, def);
     });
 
     it('should return default value if src[key] is undefined', function() {
@@ -34,12 +34,12 @@ describe('all', function() {
     });
 
     it('should return assinged value to key', function() {
-      var val = fabrica.setKey('a', this.src, this.def);
+      var val = fabrica.setKey('a', this.src, this.src, this.def);
       val.should.be.eql('test');
     });
 
     it('should set default value if src[key] is undefined', function() {
-      fabrica.setKey('b', this.src, this.def);
+      fabrica.setKey('b', this.src, this.src, this.def);
       this.src.b.should.be.eql(1);
     });
   });
